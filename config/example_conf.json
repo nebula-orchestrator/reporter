@@ -1,0 +1,7 @@
+{
+  "kafka_bootstrap_servers": "mykafka.example.com:9092",
+  "kafka_topic": "nebula-reports",
+  "mongo_url": "mongodb://<mongo_user>:<mongo_password>@<nebula_mongo_host>:27017/<mongo_schema>?ssl=true&replicaSet=<mongo_replica_set>&authSource=<mongo_auth_schema>",
+  "schema_name": "nebula",
+  "mongo_max_pool_size": 25
+}

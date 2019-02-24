@@ -1,0 +1,11 @@
+language: python
+dist: xenial
+python:
+  - "3.7"
+env:
+  - MONGO_URL=mongodb://nebula:nebula@127.0.0.1:27017/nebula?authSource=admin
+install:
+  - pip install -r requirements.txt
+script:
+  - sudo sh test/travis_ci_scripts/travis_ci_build_script.sh
+  - python -m unittest discover
