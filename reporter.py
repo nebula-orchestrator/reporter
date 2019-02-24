@@ -61,21 +61,21 @@ if __name__ == "__main__":
 
     try:
         print("creating reporting kafka connection object")
-        kafka_connection = KafkaConnection(kafka_bootstrap_servers,
-                                           security_protocol=kafka_security_protocol,
-                                           sasl_mechanism=kafka_sasl_mechanism,
-                                           sasl_plain_username=kafka_sasl_plain_username,
-                                           sasl_plain_password=kafka_sasl_plain_password,
-                                           ssl_keyfile=kafka_ssl_keyfile,
-                                           ssl_password=kafka_ssl_password,
-                                           ssl_certfile=kafka_ssl_certfile,
-                                           ssl_cafile=kafka_ssl_cafile,
-                                           ssl_crlfile=kafka_ssl_crlfile,
-                                           sasl_kerberos_service_name=kafka_sasl_kerberos_service_name,
-                                           sasl_kerberos_domain_name=kafka_sasl_kerberos_domain_name,
-                                           topic=kafka_topic,
-                                           auto_offset_reset=kafka_auto_offset_reset,
-                                           group_id=kafka_group_id)
+        kafka_consumer_object = kafka_consume(kafka_bootstrap_servers,
+                                       security_protocol=kafka_security_protocol,
+                                       sasl_mechanism=kafka_sasl_mechanism,
+                                       sasl_plain_username=kafka_sasl_plain_username,
+                                       sasl_plain_password=kafka_sasl_plain_password,
+                                       ssl_keyfile=kafka_ssl_keyfile,
+                                       ssl_password=kafka_ssl_password,
+                                       ssl_certfile=kafka_ssl_certfile,
+                                       ssl_cafile=kafka_ssl_cafile,
+                                       ssl_crlfile=kafka_ssl_crlfile,
+                                       sasl_kerberos_service_name=kafka_sasl_kerberos_service_name,
+                                       sasl_kerberos_domain_name=kafka_sasl_kerberos_domain_name,
+                                       topic=kafka_topic,
+                                       auto_offset_reset=kafka_auto_offset_reset,
+                                       group_id=kafka_group_id)
     except Exception as e:
         print(e, file=sys.stderr)
         print("failed creating reporting kafka connection object - exiting")
@@ -98,9 +98,10 @@ if __name__ == "__main__":
         print("failed creating mongo ttl index - exiting")
         os._exit(2)
 
-    for message in kafka_connection:
+    for message in kafka_consumer_object:
         message_body = message.value
         message_body["report_insert_date"] = datetime.datetime.utcnow()
+        print(str(message_body))
         try:
             mongo_connection.mongo_add_report(message_body)
         except Exception as e:
