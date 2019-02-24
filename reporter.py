@@ -92,7 +92,7 @@ if __name__ == "__main__":
 
     try:
         # ensure mongo is indexed properly
-        mongo_connection.mongo_create_ttl_index("report_insert_date", "mongo_report_ttl")
+        mongo_connection.mongo_create_ttl_index("report_insert_date", mongo_report_ttl)
     except Exception as e:
         print(e, file=sys.stderr)
         print("failed creating mongo ttl index- exiting")
