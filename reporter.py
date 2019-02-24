@@ -95,7 +95,7 @@ if __name__ == "__main__":
         mongo_connection.mongo_create_ttl_index("report_insert_date", mongo_report_ttl)
     except Exception as e:
         print(e, file=sys.stderr)
-        print("failed creating mongo ttl index- exiting")
+        print("failed creating mongo ttl index - exiting")
         os._exit(2)
 
     for message in kafka_connection:
@@ -105,5 +105,5 @@ if __name__ == "__main__":
             mongo_connection.mongo_add_report(message_body)
         except Exception as e:
             print(e, file=sys.stderr)
-            print("failed writing report into mongo- exiting")
+            print("failed writing report into mongo - exiting")
             os._exit(2)
