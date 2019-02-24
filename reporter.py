@@ -1,5 +1,6 @@
 from functions.reporting.kafka import *
 from functions.db.mongo import *
+import datetime
 
 
 # get setting from envvar with failover from config/conf.json file if envvar not set
@@ -98,6 +99,11 @@ if __name__ == "__main__":
         os._exit(2)
 
     for message in kafka_connection:
-        print("%s:%d:%d: key=%s value=%s" % (message.topic, message.partition,
-                                             message.offset, message.key,
-                                             message.value))
+        message_body = message.value
+        message_body["report_insert_date"] = datetime.datetime.utcnow()
+        try:
+            mongo_connection.mongo_add_report(message_body)
+        except Exception as e:
+            print(e, file=sys.stderr)
+            print("failed creating mongo ttl index- exiting")
+            os._exit(2)
