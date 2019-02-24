@@ -105,5 +105,5 @@ if __name__ == "__main__":
             mongo_connection.mongo_add_report(message_body)
         except Exception as e:
             print(e, file=sys.stderr)
-            print("failed creating mongo ttl index- exiting")
+            print("failed writing report into mongo- exiting")
             os._exit(2)
