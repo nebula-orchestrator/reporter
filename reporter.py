@@ -98,10 +98,10 @@ if __name__ == "__main__":
         print("failed creating mongo ttl index - exiting")
         os._exit(2)
 
+    print("starting to digest messages from kafka")
     for message in kafka_consumer_object:
         message_body = message.value
         message_body["report_insert_date"] = datetime.datetime.utcnow()
-        print(str(message_body))
         try:
             mongo_connection.mongo_add_report(message_body)
         except Exception as e:
