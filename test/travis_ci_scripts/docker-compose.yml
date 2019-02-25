@@ -20,11 +20,19 @@ services:
     restart: unless-stopped
     depends_on:
       - zookeeper
-    links:
-      - zookeeper
     environment:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_BROKER_ID: 1
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
+  mongo:
+    container_name: mongo
+    hostname: mongo
+    image: mongo:4.0.1
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: nebula
+      MONGO_INITDB_ROOT_PASSWORD: nebula
