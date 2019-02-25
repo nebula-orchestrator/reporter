@@ -99,12 +99,12 @@ if __name__ == "__main__":
         os._exit(2)
 
     print("starting to digest messages from kafka")
-    for message in kafka_consumer_object:
-        message_body = message.value
-        message_body["report_insert_date"] = datetime.datetime.utcnow()
-        try:
+    try:
+        for message in kafka_consumer_object:
+            message_body = message.value
+            message_body["report_insert_date"] = datetime.datetime.utcnow()
             mongo_connection.mongo_add_report(message_body)
-        except Exception as e:
-            print(e, file=sys.stderr)
-            print("failed writing report into mongo - exiting")
-            os._exit(2)
+    except Exception as e:
+        print(e, file=sys.stderr)
+        print("failed writing report into mongo - exiting")
+        os._exit(2)
