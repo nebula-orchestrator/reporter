@@ -19,10 +19,10 @@ class MongoConnection:
     def mongo_create_ttl_index(self, report_index_name, report_index_ttl):
         try:
             self.collection_reports.create_index([(report_index_name, ASCENDING)], background=True,
-                                              name=report_index_name + "_index", unique=True, sparse=True,
-                                              expireAfterSeconds=report_index_ttl)
+                                                 name=report_index_name + "_index", unique=True, sparse=True,
+                                                 expireAfterSeconds=report_index_ttl)
             self.collection_reports.create_index([("device_group", ASCENDING)], background=True,
-                                              name="device_group_index", unique=False, sparse=True)
+                                                 name="device_group_index", unique=False, sparse=True)
             self.collection_reports.create_index([("hostname", ASCENDING)], background=True,
                                                  name="hostname_index", unique=False, sparse=True)
             self.collection_reports.create_index([("report_creation_time", ASCENDING)], background=True,
