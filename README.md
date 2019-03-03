@@ -1,6 +1,6 @@
 # Nebula reporter
 
-Travis CI unit tests: [![Build Status](https://travis-ci.org/nebula-orchestrator/reporter.svg?branch=master)](https://travis-ci.org/nebula-orchestrator/reporter)
+Travis CI unit tests & autobuild: [![Build Status](https://travis-ci.org/nebula-orchestrator/reporter.svg?branch=master)](https://travis-ci.org/nebula-orchestrator/reporter)
 
 Shippable ARM autobuild: [![Run Status](https://api.shippable.com/projects/5c72a897339444060092f8cf/badge?branch=master)]()
 
