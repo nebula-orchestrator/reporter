@@ -20,4 +20,4 @@ want the ability to stop\start a globally distributed service with a single comm
 Nebula was designed from the ground up to answer all of this needs and much more, refer to the [documentation](http://nebula.readthedocs.io/en/latest/) if your interested in seeing on how to use it.
 
 This repo is the optional reporter component of Nebula container orchestrator, it pulls the data from Kafka (which is in turn filled by the worker with info about their current state) & populate the backend DB with it.
-While designed for Nebula this reporter acccepts any JSON messages in kafka & populates MongoDB with it so it can be also be used as a genric standalone sink between Kafka & MongoDB.
+While designed for Nebula this reporter accepts any JSON messages in kafka & populates MongoDB with it so it can be also be used as a genric standalone sink between Kafka & MongoDB.
