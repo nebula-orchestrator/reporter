@@ -1,59 +1,38 @@
 from functions.reporting.kafka import *
 from functions.db.mongo import *
 import datetime
-
-
-# get setting from envvar with failover from config/conf.json file if envvar not set
-# using skip rather then None so passing a None type will still pass a None value rather then assuming there should be
-# default value thus allowing to have No value set where needed (like in the case of registry user\pass)
-def get_conf_setting(setting, settings_json, default_value="skip"):
-    try:
-        setting_value = os.getenv(setting.upper(), settings_json.get(setting, default_value))
-    except Exception as e:
-        print(e, file=sys.stderr)
-        print("missing " + setting + " config setting", file=sys.stderr)
-        print(("missing " + setting + " config setting"))
-        os._exit(2)
-    if setting_value == "skip":
-        print("missing " + setting + " config setting", file=sys.stderr)
-        print(("missing " + setting + " config setting"))
-        os._exit(2)
-    return setting_value
-
+from parse_it import ParseIt
 
 if __name__ == "__main__":
 
     try:
-        # read config file/envvars at startup, order preference is envvar>config file>default value (if exists)
-        if os.path.exists("config/conf.json"):
-            print("reading config file")
-            auth_file = json.load(open("config/conf.json"))
-        else:
-            print("config file not found - skipping reading it and checking if needed params are given from envvars")
-            auth_file = {}
-
         print("reading config variables")
+        parser = ParseIt(config_folder_location="config")
 
         # the following config variables are for configure the reporter
-        kafka_bootstrap_servers = get_conf_setting("kafka_bootstrap_servers", auth_file)
-        kafka_security_protocol = get_conf_setting("kafka_security_protocol", auth_file, "PLAINTEXT")
-        kafka_sasl_mechanism = get_conf_setting("kafka_sasl_mechanism", auth_file, None)
-        kafka_sasl_plain_username = get_conf_setting("kafka_sasl_plain_username", auth_file, None)
-        kafka_sasl_plain_password = get_conf_setting("kafka_sasl_plain_password", auth_file, None)
-        kafka_ssl_keyfile = get_conf_setting("kafka_ssl_keyfile", auth_file, None)
-        kafka_ssl_password = get_conf_setting("kafka_ssl_password", auth_file, None)
-        kafka_ssl_certfile = get_conf_setting("kafka_ssl_certfile", auth_file, None)
-        kafka_ssl_cafile = get_conf_setting("kafka_ssl_cafile", auth_file, None)
-        kafka_ssl_crlfile = get_conf_setting("kafka_ssl_crlfile", auth_file, None)
-        kafka_sasl_kerberos_service_name = get_conf_setting("kafka_sasl_kerberos_service_name", auth_file, "kafka")
-        kafka_sasl_kerberos_domain_name = get_conf_setting("kafka_sasl_kerberos_domain_name", auth_file, "kafka")
-        kafka_topic = get_conf_setting("kafka_topic", auth_file, "nebula-reports")
-        kafka_auto_offset_reset = get_conf_setting("kafka_auto_offset_reset", auth_file, "earliest")
-        kafka_group_id = get_conf_setting("kafka_group_id", auth_file, "nebula-reporter-group")
-        mongo_url = get_conf_setting("mongo_url", auth_file)
-        schema_name = get_conf_setting("schema_name", auth_file, "nebula")
-        mongo_max_pool_size = int(get_conf_setting("mongo_max_pool_size", auth_file, "25"))
-        mongo_report_ttl = int(get_conf_setting("mongo_report_ttl", auth_file, "3600"))
+        kafka_bootstrap_servers = parser.read_configuration_variable("kafka_bootstrap_servers", required=True)
+        kafka_security_protocol = parser.read_configuration_variable("kafka_security_protocol",
+                                                                     default_value="PLAINTEXT")
+        kafka_sasl_mechanism = parser.read_configuration_variable("kafka_sasl_mechanism",  default_value=None)
+        kafka_sasl_plain_username = parser.read_configuration_variable("kafka_sasl_plain_username",  default_value=None)
+        kafka_sasl_plain_password = parser.read_configuration_variable("kafka_sasl_plain_password",  default_value=None)
+        kafka_ssl_keyfile = parser.read_configuration_variable("kafka_ssl_keyfile",  default_value=None)
+        kafka_ssl_password = parser.read_configuration_variable("kafka_ssl_password",  default_value=None)
+        kafka_ssl_certfile = parser.read_configuration_variable("kafka_ssl_certfile",  default_value=None)
+        kafka_ssl_cafile = parser.read_configuration_variable("kafka_ssl_cafile",  default_value=None)
+        kafka_ssl_crlfile = parser.read_configuration_variable("kafka_ssl_crlfile",  default_value=None)
+        kafka_sasl_kerberos_service_name = parser.read_configuration_variable("kafka_sasl_kerberos_service_name",
+                                                                              default_value="kafka")
+        kafka_sasl_kerberos_domain_name = parser.read_configuration_variable("kafka_sasl_kerberos_domain_name",
+                                                                             default_value="kafka")
+        kafka_topic = parser.read_configuration_variable("kafka_topic",  default_value="nebula-reports")
+        kafka_auto_offset_reset = parser.read_configuration_variable("kafka_auto_offset_reset",
+                                                                     default_value="earliest")
+        kafka_group_id = parser.read_configuration_variable("kafka_group_id",  default_value="nebula-reporter-group")
+        mongo_url = parser.read_configuration_variable("mongo_url", required=True)
+        schema_name = parser.read_configuration_variable("schema_name",  default_value="nebula")
+        mongo_max_pool_size = parser.read_configuration_variable("mongo_max_pool_size",  default_value=25)
+        mongo_report_ttl = parser.read_configuration_variable("mongo_report_ttl",  default_value=3600)
     except Exception as e:
         print(e, file=sys.stderr)
         print("error reading config settings")

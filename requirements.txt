@@ -1,3 +1,8 @@
+configobj==5.0.6
 dnspython==1.16.0
 kafka-python==1.4.6
-pymongo==3.7.2
+parse-it==0.1.8
+pymongo==3.8.0
+PyYAML==5.1
+six==1.12.0
+toml==0.10.0
