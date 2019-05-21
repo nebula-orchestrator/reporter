@@ -11,11 +11,14 @@ env:
   - secure: uwECiToau8OXCUbmd/ZMyeIDqHGMAq/WE+SBHZ/yqAhEQJ5b5G5B/8tuZPdP9GQeWVj+7469gS9zEhLrXR3ux9fIkJRWDW7alLBkxnul5pisv95GeTa2oxKtDeB+Xikeb0ZXI06BT8n9GBVKAYokhE+GL55xxvZ2xjICjR+Z+YR7N/RhBU4xLnW6qUyVpS7oW1WuHMrYwWsTkX2ktYhnhrJjOWDM+4nEHlH5XM0fDGn5PXxTiPM/8bhQFo/8/gPnK4gQCFdV4dD9OdL3TlCodpPv77jcUdNWIlXilt2eAPbjJKZvC26JpA5TQP9RcaYDYCStGtbi49uiZ7Ay6mL9q/u0G6Yf75vUTHL/jGiZH7FPBu6bvpM1jVoBKRJr3BK1aYu/pJPAIPcsSPDb5rSno1f0T7TrPl4EFzI6NxwT73hQG3K9Pu33mn9KXA4Ags2YoR7Ov194z7b95N0RIDo0k+qKHjpWSTnxR+BiMDAWH2bXSh8QpKRts65hOC+WY2X1lhi4YD3euESKQxm4Ima/otcLmaXCwEvsvwHs4+qNCAvly4tInrJUer9j/65yAMQ38iBxwpf6oovXdd0qhVi3HtXgNouox97lc+C0VJEhqw2nGJd3vflsQcFU7w44WOd7aTNFTk9y0V91vO9phPfp/IQQ1zpqoq1dxLr1plAYC8k=
 install:
 - pip install -r requirements.txt
+- pip install codecov
 script:
 - sudo sh test/travis_ci_scripts/travis_ci_build_script.sh
-- python -m unittest discover
+- coverage run -m unittest
 deploy:
   on:
     all_branches: true
   provider: script
   script: bash  test/travis_ci_scripts/deploy.sh
+after_success:
+- codecov
