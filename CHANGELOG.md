@@ -1,12 +1,20 @@
 # Change Log
 
+## [Unreleased](https://github.com/nebula-orchestrator/reporter/tree/HEAD)
+
+[Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.6.1...HEAD)
+
+**Implemented enhancements:**
+
+- Bump parse-it from 0.7.0 to 0.8.1 [\#6](https://github.com/nebula-orchestrator/reporter/pull/6) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [2.6.1](https://github.com/nebula-orchestrator/reporter/tree/2.6.1) (2019-05-21)
 [Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.5.0...2.6.1)
 
 **Implemented enhancements:**
 
-- Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot[bot]](https://github.com/apps/dependabot))
-- Bump parse-it from 0.5.5 to 0.5.11 [\#3](https://github.com/nebula-orchestrator/reporter/pull/3) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump parse-it from 0.5.5 to 0.5.11 [\#3](https://github.com/nebula-orchestrator/reporter/pull/3) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [2.5.0](https://github.com/nebula-orchestrator/reporter/tree/2.5.0) (2019-04-16)
 [Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.4.0...2.5.0)
