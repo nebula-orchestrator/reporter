@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump pyyaml from 5.1 to 5.1.1 [\#7](https://github.com/nebula-orchestrator/reporter/pull/7) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.7.0 to 0.8.1 [\#6](https://github.com/nebula-orchestrator/reporter/pull/6) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [2.6.1](https://github.com/nebula-orchestrator/reporter/tree/2.6.1) (2019-05-21)
