@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump parse-it from 0.9.1 to 1.0.0 [\#10](https://github.com/nebula-orchestrator/reporter/pull/10) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.9.0 to 0.9.1 [\#9](https://github.com/nebula-orchestrator/reporter/pull/9) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.8.1 to 0.9.0 [\#8](https://github.com/nebula-orchestrator/reporter/pull/8) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyyaml from 5.1 to 5.1.1 [\#7](https://github.com/nebula-orchestrator/reporter/pull/7) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
