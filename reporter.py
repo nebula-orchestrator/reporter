@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     try:
         print("reading config variables")
-        parser = ParseIt(config_folder_location="config", recurse=True)
+        parser = ParseIt(config_location="config", recurse=True)
 
         # the following config variables are for configure the reporter
         kafka_bootstrap_servers = parser.read_configuration_variable("kafka_bootstrap_servers", required=True)
