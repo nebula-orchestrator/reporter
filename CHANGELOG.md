@@ -14,7 +14,6 @@
 - Bump parse-it from 0.8.1 to 0.9.0 [\#8](https://github.com/nebula-orchestrator/reporter/pull/8) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyyaml from 5.1 to 5.1.1 [\#7](https://github.com/nebula-orchestrator/reporter/pull/7) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.7.0 to 0.8.1 [\#6](https://github.com/nebula-orchestrator/reporter/pull/6) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 **Closed issues:**
 
@@ -25,6 +24,7 @@
 
 **Implemented enhancements:**
 
+- Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.5.5 to 0.5.11 [\#3](https://github.com/nebula-orchestrator/reporter/pull/3) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [2.5.0](https://github.com/nebula-orchestrator/reporter/tree/2.5.0) (2019-04-16)
