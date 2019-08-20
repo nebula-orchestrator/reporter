@@ -6,10 +6,9 @@
 
 **Implemented enhancements:**
 
+- Bump parse-it from 3.1.1 to 3.2.0 [\#17](https://github.com/nebula-orchestrator/reporter/pull/17) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pymongo from 3.8.0 to 3.9.0 [\#16](https://github.com/nebula-orchestrator/reporter/pull/16) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump parse-it from 3.0.0 to 3.1.1 [\#15](https://github.com/nebula-orchestrator/reporter/pull/15) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 2.0.0 to 3.0.0 [\#14](https://github.com/nebula-orchestrator/reporter/pull/14) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump pyyaml from 5.1.1 to 5.1.2 [\#13](https://github.com/nebula-orchestrator/reporter/pull/13) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 1.0.0 to 1.1.0 [\#12](https://github.com/nebula-orchestrator/reporter/pull/12) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.9.1 to 1.0.0 [\#10](https://github.com/nebula-orchestrator/reporter/pull/10) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.9.0 to 0.9.1 [\#9](https://github.com/nebula-orchestrator/reporter/pull/9) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
@@ -26,6 +25,7 @@
 
 **Implemented enhancements:**
 
+- Bump parse-it from 3.0.0 to 3.1.1 [\#15](https://github.com/nebula-orchestrator/reporter/pull/15) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.5.5 to 0.5.11 [\#3](https://github.com/nebula-orchestrator/reporter/pull/3) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
