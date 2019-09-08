@@ -1,5 +1,8 @@
 # Change Log
 
+## [2.7.0](https://github.com/nebula-orchestrator/reporter/tree/2.7.0) (2019-08-21)
+[Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.6.2...2.7.0)
+
 ## [2.6.2](https://github.com/nebula-orchestrator/reporter/tree/2.6.2) (2019-08-20)
 [Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.6.1...2.6.2)
 
