@@ -1,5 +1,13 @@
 # Change Log
 
+## [Unreleased](https://github.com/nebula-orchestrator/reporter/tree/HEAD)
+
+[Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.7.0...HEAD)
+
+**Implemented enhancements:**
+
+- Bump parse-it from 3.2.0 to 3.3.2 [\#21](https://github.com/nebula-orchestrator/reporter/pull/21) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+
 ## [2.7.0](https://github.com/nebula-orchestrator/reporter/tree/2.7.0) (2019-08-21)
 [Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.6.2...2.7.0)
 
