@@ -4,7 +4,7 @@ dpath==1.4.2
 kafka-python==1.4.7
 parse-it==3.3.2
 ply==3.11
-pyhcl==0.3.12
+pyhcl==0.3.13
 pymongo==3.9.0
 python-dotenv==0.10.3
 PyYAML==5.1.2
