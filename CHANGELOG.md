@@ -9,7 +9,6 @@
 - Bump pyhcl from 0.3.12 to 0.3.13 [\#23](https://github.com/nebula-orchestrator/reporter/pull/23) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump kafka-python from 1.4.6 to 1.4.7 [\#22](https://github.com/nebula-orchestrator/reporter/pull/22) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 3.2.0 to 3.3.2 [\#21](https://github.com/nebula-orchestrator/reporter/pull/21) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
-- Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [2.7.0](https://github.com/nebula-orchestrator/reporter/tree/2.7.0) (2019-08-21)
 [Full Changelog](https://github.com/nebula-orchestrator/reporter/compare/2.6.2...2.7.0)
@@ -19,6 +18,7 @@
 
 **Implemented enhancements:**
 
+- Bump six from 1.12.0 to 1.13.0 [\#24](https://github.com/nebula-orchestrator/reporter/pull/24) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 3.1.1 to 3.2.0 [\#17](https://github.com/nebula-orchestrator/reporter/pull/17) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pymongo from 3.8.0 to 3.9.0 [\#16](https://github.com/nebula-orchestrator/reporter/pull/16) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 3.0.0 to 3.1.1 [\#15](https://github.com/nebula-orchestrator/reporter/pull/15) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
@@ -40,6 +40,7 @@
 
 **Implemented enhancements:**
 
+- Bump parse-it from 0.5.11 to 0.7.0 [\#4](https://github.com/nebula-orchestrator/reporter/pull/4) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 0.5.5 to 0.5.11 [\#3](https://github.com/nebula-orchestrator/reporter/pull/3) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [2.5.0](https://github.com/nebula-orchestrator/reporter/tree/2.5.0) (2019-04-16)
