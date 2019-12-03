@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump pyyaml from 5.1.2 to 5.2 [\#26](https://github.com/nebula-orchestrator/reporter/pull/26) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump six from 1.12.0 to 1.13.0 [\#24](https://github.com/nebula-orchestrator/reporter/pull/24) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyhcl from 0.3.12 to 0.3.13 [\#23](https://github.com/nebula-orchestrator/reporter/pull/23) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump kafka-python from 1.4.6 to 1.4.7 [\#22](https://github.com/nebula-orchestrator/reporter/pull/22) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
