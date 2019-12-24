@@ -15,6 +15,7 @@
 
 **Merged pull requests:**
 
+- Bump python from 3.8.0-alpine3.10 to 3.8.1-alpine3.10 [\#28](https://github.com/nebula-orchestrator/reporter/pull/28) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python from 3.7.4-alpine3.10 to 3.8.0-alpine3.10 [\#25](https://github.com/nebula-orchestrator/reporter/pull/25) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
 ## [2.7.0](https://github.com/nebula-orchestrator/reporter/tree/2.7.0) (2019-08-21)
