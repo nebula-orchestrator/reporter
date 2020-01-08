@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump pyhcl from 0.3.15 to 0.4.0 [\#33](https://github.com/nebula-orchestrator/reporter/pull/33) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyyaml from 5.2 to 5.3 [\#31](https://github.com/nebula-orchestrator/reporter/pull/31) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyhcl from 0.3.13 to 0.3.15 [\#30](https://github.com/nebula-orchestrator/reporter/pull/30) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump dpath from 1.4.2 to 1.5.0 [\#29](https://github.com/nebula-orchestrator/reporter/pull/29) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
