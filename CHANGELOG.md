@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump six from 1.13.0 to 1.14.0 [\#34](https://github.com/nebula-orchestrator/reporter/pull/34) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyhcl from 0.3.15 to 0.4.0 [\#33](https://github.com/nebula-orchestrator/reporter/pull/33) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pymongo from 3.10.0 to 3.10.1 [\#32](https://github.com/nebula-orchestrator/reporter/pull/32) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyyaml from 5.2 to 5.3 [\#31](https://github.com/nebula-orchestrator/reporter/pull/31) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
