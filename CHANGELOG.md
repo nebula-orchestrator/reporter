@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump kafka-python from 2.0.0 to 2.0.1 [\#40](https://github.com/nebula-orchestrator/reporter/pull/40) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump kafka-python from 1.4.7 to 2.0.0 [\#39](https://github.com/nebula-orchestrator/reporter/pull/39) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python-dotenv from 0.10.5 to 0.11.0 [\#38](https://github.com/nebula-orchestrator/reporter/pull/38) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 3.3.2 to 3.4.0 [\#37](https://github.com/nebula-orchestrator/reporter/pull/37) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
