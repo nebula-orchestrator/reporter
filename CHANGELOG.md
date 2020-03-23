@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump pyyaml from 5.3 to 5.3.1 [\#44](https://github.com/nebula-orchestrator/reporter/pull/44) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python-dotenv from 0.11.0 to 0.12.0 [\#42](https://github.com/nebula-orchestrator/reporter/pull/42) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump kafka-python from 2.0.0 to 2.0.1 [\#40](https://github.com/nebula-orchestrator/reporter/pull/40) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump kafka-python from 1.4.7 to 2.0.0 [\#39](https://github.com/nebula-orchestrator/reporter/pull/39) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
