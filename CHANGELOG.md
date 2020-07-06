@@ -6,6 +6,8 @@
 
 **Implemented enhancements:**
 
+- Bump python-dotenv from 0.13.0 to 0.14.0 [\#52](https://github.com/nebula-orchestrator/reporter/pull/52) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
+- Bump six from 1.14.0 to 1.15.0 [\#51](https://github.com/nebula-orchestrator/reporter/pull/51) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump toml from 0.10.0 to 0.10.1 [\#49](https://github.com/nebula-orchestrator/reporter/pull/49) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump pyhcl from 0.4.3 to 0.4.4 [\#48](https://github.com/nebula-orchestrator/reporter/pull/48) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python-dotenv from 0.12.0 to 0.13.0 [\#47](https://github.com/nebula-orchestrator/reporter/pull/47) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
