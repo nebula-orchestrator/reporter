@@ -37,8 +37,13 @@
 - Bump kafka-python from 1.4.6 to 1.4.7 [\#22](https://github.com/nebula-orchestrator/reporter/pull/22) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump parse-it from 3.2.0 to 3.3.2 [\#21](https://github.com/nebula-orchestrator/reporter/pull/21) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 
+**Fixed bugs:**
+
+- Dependabot couldn't authenticate with https://pypi.python.org/simple/ [\#55](https://github.com/nebula-orchestrator/reporter/issues/55)
+
 **Merged pull requests:**
 
+- Create Dependabot config file [\#56](https://github.com/nebula-orchestrator/reporter/pull/56) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python from 3.8.2-alpine3.10 to 3.8.3-alpine3.10 [\#50](https://github.com/nebula-orchestrator/reporter/pull/50) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python from 3.8.1-alpine3.10 to 3.8.2-alpine3.10 [\#41](https://github.com/nebula-orchestrator/reporter/pull/41) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump python from 3.8.0-alpine3.10 to 3.8.1-alpine3.10 [\#28](https://github.com/nebula-orchestrator/reporter/pull/28) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
