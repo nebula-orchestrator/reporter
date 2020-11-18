@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump pymongo from 3.11.0 to 3.11.1 [\#60](https://github.com/nebula-orchestrator/reporter/pull/60) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump toml from 0.10.1 to 0.10.2 [\#59](https://github.com/nebula-orchestrator/reporter/pull/59) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump python-dotenv from 0.14.0 to 0.15.0 [\#58](https://github.com/nebula-orchestrator/reporter/pull/58) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump kafka-python from 2.0.1 to 2.0.2 [\#57](https://github.com/nebula-orchestrator/reporter/pull/57) ([dependabot[bot]](https://github.com/apps/dependabot))
