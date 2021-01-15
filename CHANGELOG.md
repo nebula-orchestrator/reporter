@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump dnspython from 2.0.0 to 2.1.0 [\#63](https://github.com/nebula-orchestrator/reporter/pull/63) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump parse-it from 3.4.0 to 3.5.0 [\#62](https://github.com/nebula-orchestrator/reporter/pull/62) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pymongo from 3.11.1 to 3.11.2 [\#61](https://github.com/nebula-orchestrator/reporter/pull/61) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pymongo from 3.11.0 to 3.11.1 [\#60](https://github.com/nebula-orchestrator/reporter/pull/60) ([dependabot[bot]](https://github.com/apps/dependabot))
