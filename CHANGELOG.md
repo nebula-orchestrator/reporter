@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Bump python-dotenv from 0.16.0 to 0.17.0 [\#69](https://github.com/nebula-orchestrator/reporter/pull/69) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump python-dotenv from 0.15.0 to 0.16.0 [\#68](https://github.com/nebula-orchestrator/reporter/pull/68) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump parse-it from 3.5.0 to 3.6.0 [\#67](https://github.com/nebula-orchestrator/reporter/pull/67) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump pymongo from 3.11.2 to 3.11.3 [\#66](https://github.com/nebula-orchestrator/reporter/pull/66) ([dependabot[bot]](https://github.com/apps/dependabot))
