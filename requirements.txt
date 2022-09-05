@@ -6,7 +6,7 @@ parse-it==2022.8.9.7.15
 ply==3.11
 pyhcl==0.4.4
 pymongo==4.2.0
-python-dotenv==0.20.0
+python-dotenv==0.21.0
 PyYAML==6.0
 six==1.16.0
 toml==0.10.2
