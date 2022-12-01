@@ -1,6 +1,6 @@
 configobj==5.0.6
 dnspython==2.2.1
-dpath==2.1.0
+dpath==2.1.1
 kafka-python==2.0.2
 parse-it==2022.11.29.8.54
 ply==3.11
