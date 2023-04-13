@@ -2,7 +2,7 @@ configobj==5.0.8
 dnspython==2.3.0
 dpath==2.1.5
 kafka-python==2.0.2
-parse-it==2023.4.4.10.50
+parse-it==2023.4.9.8.0
 ply==3.11
 pyhcl==0.4.4
 pymongo==4.3.3
