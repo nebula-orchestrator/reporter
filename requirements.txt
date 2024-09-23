@@ -1,4 +1,4 @@
-configobj==5.0.8
+configobj==5.0.9
 dnspython==2.6.1
 dpath==2.2.0
 kafka-python==2.0.2
