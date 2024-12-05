@@ -8,6 +8,6 @@ pyhcl==0.4.5
 pymongo==4.10.1
 python-dotenv==1.0.1
 PyYAML==6.0.2
-six==1.16.0
+six==1.17.0
 toml==0.10.2
 xmltodict==0.14.2
