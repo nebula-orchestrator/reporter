@@ -10,4 +10,4 @@ pymongo==4.15.0
 PyYAML==6.0.2
 six==1.17.0
 toml==0.10.2
-xmltodict==0.15.1
+xmltodict==1.0.0
